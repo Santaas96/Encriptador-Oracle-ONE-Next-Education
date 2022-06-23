@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+
+    <body>
+
+        <header>
+
+            <img class="logo" src="imagenes/Vector.png">
+
+        </header>        
+        
+        <main>
+            <div class="contglobal">
+                <div class="input">
+
+                    <textarea id= "ingreso" class="ingresotexto" autofocus type="text" placeholder="Ingrese su texto aquí" ></textarea>
+    
+                    <div class="caja1botones">
+                        <p id="msjNO">Solo letras minúsculas y sin acentos</p>                      
+                        <div class="soloBotones">
+                            <button id="boton1">Encriptar!</button>                    
+                            <button id="boton2">Desencriptar!</button>
+                        </div>
+    
+                    </div>                               
+    
+                </div>
+    
+                <div class="output">
+                    <img id="imgMuñeco" src="imagenes/Muñeco.png" class="imagen-muñeco">
+                    <textarea class="salidatexto" id="output" readonly></textarea>
+                    <h2 id="msj1">Ningún mensaje fue encontrado</h2>
+                    <p id="msj2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button id="boton3">COPIAR!</button>
+                </div>
+
+            </div>           
+
+            
+        <div>
+			<footer>
+				<p class="footer-leyenda">Diseñado originalmente por Cortes Santiago para el Programa ONE - 2022</p>
+			</footer>
+		</div>             
+
+        </main>     
+
+    </body>
+
+    <script src="./app.js"></script>
+
+</html>
